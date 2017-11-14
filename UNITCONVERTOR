@@ -1,0 +1,15 @@
+// Calculates centimeters to meters and inches (in this order)
+#include <iostream>
+using namespace std;
+int main()
+{
+    double centimeters, meters, inches;
+    cout << "Enter the amount of centimeters you wish to calculate: ";
+    cin >> centimeters;
+    meters = centimeters / 100;
+    inches = centimeters * 0.39;
+    cout << "The centimeters you entered in meters and inches are:\n";
+    cout << meters << " meters" << endl;
+    cout << inches << " inches" << endl;
+return 0;
+}
