@@ -1,0 +1,26 @@
+//Rectangle Code
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"*****"<<endl;
+    cout<<"*****"<<endl;
+    cout<<"*****"<<endl;
+    cout<<"***** "<<endl;
+    cout<<"*****"<<endl;
+ return 0;
+}
+
+
+//Right Triangle Code
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"*            "<<endl;
+    cout<<"***      "<<endl;
+    cout<<"*****   "<<endl;
+    cout<<"******* "<<endl;
+    cout<<"**********"<<endl;
+ return 0;
+}
