@@ -1,0 +1,14 @@
+//Celsius to Fahrenheit Challenge - A program that calculates C* to F* with the conversion formula.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double fahrenheit, celsius;
+ 
+    cout << "Enter the temperature in Celsius (*C): ";
+    cin >> celsius;
+    // Conversion formula from C* to F*.
+    fahrenheit = (celsius * 9.0) / 5.0 + 32;
+    cout << "The temperature in Fahrenheit is: " << fahrenheit << "*F" <<endl;
+    return 0;
+}
