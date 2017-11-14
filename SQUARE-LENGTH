@@ -1,0 +1,16 @@
+//Simple code to calculate the length of a square. Asks the user for input. A = s^2, or A = height * width is the formula. Since this is a square, you only need to ask for one input, as all sides are equal length by default
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int side;
+    cout << "Please input the length of the side: " << endl;
+    cin >> side;
+
+    int area = side * side; 
+    cout << "The area is: " << area << endl;
+
+return 0;
+}
