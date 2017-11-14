@@ -1,0 +1,14 @@
+// Calculates the user’s weight and converts it from lb to kg
+#include <iostream>
+using namespace std;
+int main()
+{
+	double pounds, kilograms;
+	cout << "Enter your weight in pounds: ";
+	cin >> pounds;
+	// one kilo weighs 2.2 lbs, the next line will do the mathematical conversion
+	kilograms = pounds / 2.2;
+	cout << "Your weight in kilograms is ";
+	cout << kilograms << endl;
+return 0;
+}
