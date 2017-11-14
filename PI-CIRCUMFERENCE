@@ -1,0 +1,15 @@
+// This program calculates the radius/pi with circumference.
+#include <iostream>
+using namespace std;
+#define RADIUS 15.0
+int main()
+{
+const double pi = 3.14159;
+double area;
+double circum;
+area = pi * RADIUS * RADIUS;
+circum = 2 * pi * RADIUS;
+
+cout << "The circumference is " << circum << " and the area is " << area;
+return 0;
+}
