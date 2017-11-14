@@ -1,0 +1,57 @@
+// This program prints out my first name by converting ASCII numbers to char letters.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+char number = 73;
+char number1 = 83;
+char number2 = 65;
+char number3 = 66;
+char number4 = 69;
+char number5 = 76;
+
+
+cout << "My name is: \n";
+cout << number;
+cout << number1;
+cout << number2;
+cout << number3; 
+cout << number4;
+cout << number5; 
+
+return 0;
+}
+
+----
+// This version of the code displays both the value and the letters.
+// This program shows my first name with the ASCII values.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int number = 73;
+int number1 = 83;
+int number2 = 65;
+int number3 = 66;
+int number4 = 69;
+int number5 = 76;
+
+cout << static_cast<char>(number);
+cout << static_cast<char>(number1);
+cout << static_cast<char>(number2);
+cout << static_cast<char>(number3);
+cout << static_cast<char>(number4);
+cout << static_cast<char>(number5) << endl;
+
+cout << number << "-";
+cout << number1 << "-";
+cout << number2 << "-";
+cout << number3 << "-";
+cout << number4 << "-";
+cout << number5;
+return 0;
+}
