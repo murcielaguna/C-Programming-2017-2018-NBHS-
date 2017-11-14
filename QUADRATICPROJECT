@@ -1,0 +1,85 @@
+/* Code that determines the real roots of the quadratic equation and the complex solution of quadratic equation */ 
+
+#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main()
+{
+
+double a,b,c,d,x1,x2,x;
+
+cout << "The standard for of quadratic equation is ax2 + bx + c = 0.\n";
+// Enter a value for “a”,”b”, and “c”
+cout << "Enter the value of \" a \" for following equation : ";
+cin >> a;
+cout << "Enter the value of \" b \" for following equation : ";
+cin >> b;
+cout << "Enter the value of \" c \" for following equation : ";
+cin >> c;
+cout << "\nAnswer : \n";
+if ( a ==  0 && b == 0 )
+  {
+         // if a = 0 and b = 0 ,not make a any kind of equation
+        cout << "\nThat is not possible value of \" a \" , \"b \" and \"c \" for quadratic formula. : ( ";
+   }
+else if (a == 0 && !(b== 0))
+   {
+   //for quadratic equation “a” is not equal to 0
+   // if a =0 and b is not equal to 0 ,that means that is an equation of a line
+cout << "\n That is not a quadratic formula, That is an equation of line";
+	cout << "\n The equation of line is " << b << "x+ " << c << " = 0 .";
+cout << "\n The solution of line is x = " << -c << "/ " << b << " = " << -c/b;
+    }
+
+    else if (!(a == 0 ))
+
+    {
+    cout << "\n(" << a << ")x2 + (" << b << ")x + (" <<c << ") = 0 is the form of quadratic  equation.\n\n";
+
+/* if d = 0 that means the equation has one real solution  
+   if d > 0 that means equation has two different solution
+   if d < 0 that means equation has two different complex solution*/
+  // d is use for discriminant
+        d = pow(b,2) - (4*a*c);
+        
+        if (d >= 0)
+      { 
+//This part for d >=  0
+if ( d > 0)
+      {
+//This part for d  > 0
+//x1 and x2 are a solution of a quadratic equation.
+x1 = (-b + sqrt(d)) / (2 * a);
+x2 = (-b - sqrt(d)) / (2 * a);
+cout << "The quadratic equation has  a two different solution. \n"; 
+cout << "The solution of (" << a << ")x2 + (" << b << ") x + (" << c << ") = 0 are " << x1 << "and " << x2;
+ //factor form
+cout << "\n( x - (" << x1 << ")) * ( x - (" << x2 << ")) = 0";
+         }
+        else
+         {
+	// This part for d = 0;
+	cout << "The quadratic equation has one real solution.\n";
+	x = -b / (2*a);
+	   cout << "The solution of ("<< a <<")x2 + ("<< b <<")x + (" << c <<") = 0 is " << x;
+   cout << "\n (x- (" << x << ")) * (x- (" << x << ")) = 0";
+
+           }
+
+           }
+
+else
+
+           {
+//That part for d < 0
+cout << "The quadratic equation has two different complex solutions.\n";
+cout << "The solution of ( "<< a << " )x2 + ( " << b << " )x + ( " << c << " ) = 0 is " << -b / (2*a) << " +- ( " << sqrt (-d) / (2*a) << ") i.";
+cout << "\nThe real part of the solution is " << -b / (2*a);
+cout << "\nThe imaginary part of the solution is " << sqrt(-d) / (2*a);
+            }
+}
+  return 0;
+}
